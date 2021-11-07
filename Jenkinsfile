@@ -6,7 +6,7 @@ pipeline {
       stage ('echo build cause') {
         steps {
           sh '''
-          echo currentBuild.getBuildCauses()
+          currentBuild.getBuildCauses()
           '''
         }
       }
